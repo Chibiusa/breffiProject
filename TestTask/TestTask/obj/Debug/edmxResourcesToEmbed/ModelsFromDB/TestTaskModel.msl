@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище EquipmentDBModelContainer" CdmEntityContainer="EquipmentDBEntities">
+    <EntitySetMapping Name="Equipment">
+      <EntityTypeMapping TypeName="EquipmentDBModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="IdEquipment" ColumnName="IdEquipment" />
+          <ScalarProperty Name="IdBrand" ColumnName="IdBrand" />
+          <ScalarProperty Name="IdToolType" ColumnName="IdToolType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToolType">
+      <EntityTypeMapping TypeName="EquipmentDBModel.ToolType">
+        <MappingFragment StoreEntitySet="ToolType">
+          <ScalarProperty Name="IdTool" ColumnName="IdTool" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

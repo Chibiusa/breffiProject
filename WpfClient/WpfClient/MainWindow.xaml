@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClient"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="350" Width="625" Loaded="Window_Loaded">
+
+    <Grid ShowGridLines="True" RenderTransformOrigin="0.504,0.499" >
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="1*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid1"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0.4,36.8" Grid.RowSpan="2"  />
+        <Button Grid.Column="1" Grid.Row="1" Content="Просмотр" Margin="10.2,40,9.6,20.8" Height="25" Width="100"  />
+    </Grid>
+</Window>
